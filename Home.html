@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fold</title>
+    <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Sacramento&amp;display=swap'>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="images/foldimg.png" alt="The Fold Logo" id="preloader-logo">
+    </div>
+
+    <!-- Main Content -->
+    <div id="content">
+        <header>
+            <!-- Logo -->
+            <img src="images/foldimg.png" alt="The Fold Logo" id="logo">
+
+            <!-- Desktop Menu -->
+            <div id="nav-container">
+                <nav id="nav-menu">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Sessions & Events</a>
+                    <a href="#">Community & Resources</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+                <button id="contact-btn">JOIN US</button>
+            </div>
+
+            <!-- Mobile Burger Menu -->
+            <div id="burger-menu" onclick="toggleMenu()">☰</div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu">
+                <div id="close-btn" onclick="toggleMenu()">✖</div>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Sessions & Events</a>
+                <a href="#">Community & Resources</a>
+                <a href="#">Contact Us</a>
+                <button id="mobile-contact-btn">Get in Touch</button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <video autoplay muted loop id="background-video">
+                <source src="videos\test video.mp4" type="video/mp4">
+            </video>
+
+            <div id="hero-content">
+                <div class="hero-slide active">
+                    <h1>Welcome to The Fold</h1>
+                    <p>A place to grow in faith, prayer, and purpose.</p>
+                    <button class="hero-btn">Join Now</button>
+                </div>
+                <div class="hero-slide">
+                    <h1>Connect & Pray</h1>
+                    <p>Be part of a community that prays together.</p>
+                    <button class="hero-btn">Join a Session</button>
+                </div>
+                <div class="hero-slide">
+                    <h1>Strengthen Your Faith</h1>
+                    <p>Access devotionals, Bible studies, and resources.</p>
+                    <button class="hero-btn">Explore Resources</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About The Fold Section -->
+       
+        
+        <!-- About The Fold Section -->
+        <section id="about">
+            <canvas id="gooeyCanvas"></canvas>
+            <div class="about-content">
+                <!-- Left Side: White Box with Text -->
+                <div class="text-box">
+                    <div class="white-box">
+                        <h2 class="about-title">About The Fold</h2>
+                         <p class="about-text">The Fold is a Christian teen community</p> <!--created by young believers from different backgrounds – Pentecostal, Baptist, Catholic, Anglican, and more. -->
+                        
+                        <p class="about-text">It exists so that teenagers can come together to</p> <!-- **pray, chat, and have faith-based and real-life discussions** – from spiritual growth to daily life, movies, and anime.-->
+                        
+                        <p class="about-text">The Fold is also a place to **share resources** that help each</p> <!-- other grow in **faith, life, and knowledge.** -->
+    
+                        <div class="theme-box">
+                            <h3>✨ Our Theme This Year ✨</h3>
+                            <h2>🔥 Our Year of the Supernatural 🔥</h2>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Right Side: Image Slideshow -->
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="images\teen1.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images\teen4.webp" alt="Slide 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images\teen3.webp" alt="Slide 3">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images\teen5.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images\teen6.avif" alt="Slide 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- Community & Resources Section -->
+<section id="resources">
+    <!-- Background Video -->
+    <video autoplay muted loop id="resources-bg-video">
+        <source src="videos\video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Moving SVG Element -->
+    <svg id="moving-svg" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="10" fill="gold"></circle>
+    </svg>
+
+    <h2 class="section-title" style= "color: white;">🌍 Join Our Community & Access Resources 📚</h2>
+    <br>
+    
+    <div class="resource-container">
+        
+        <!-- WhatsApp Group -->
+        <div class="resource-card">
+            <img src="images\whatsapp.png" alt="WhatsApp Group">
+            <h3 style="color: white;">WhatsApp Group</h3>
+            <p>Join our WhatsApp community to chat, share, and grow in faith.</p>
+            <a href="https://chat.whatsapp.com/YOUR_GROUP_LINK" target="_blank" class="join-btn">Join Now</a>
+        </div>
+       
+        <!-- Telegram Group -->
+        <div class="resource-card">
+            <img src="images\telegram.png" alt="Telegram Group">
+            <h3 style="color: white;">Telegram Channel</h3>
+            <p>Join Our Live Sessions here.Get updates, devotionals, and discussions in our Telegram group.</p>
+            <a href="https://t.me/YOUR_GROUP_LINK" target="_blank" class="join-btn">Join Now</a>
+        </div>
+
+        <!-- Bible Study PDF -->
+        <div class="resource-card">
+            <img src="images\devotional.png" alt="Bible Study">
+            <h3 style="color: white;">Devotionals & Past Sessions</h3>
+            <p>Download free Bible study materials, devotionals, and resources.</p>
+            <a href="resources/biblestudy.pdf" download class="join-btn">Download</a>
+        </div>
+       
+   
+        <div class="live-content">
+            <!-- Left Side: White Box with Text -->
+            <div class="livetext-box">
+                <div class="livewhite-box">
+                    <h2 class="live-title">JOIN OUR LIVE <br>SESSION NOW</h2>
+                     <p class="live-text">The Fold is a Christian teen community</p>                    
+                     <a href="resources/biblestudy.pdf" download class="livejoin-btn">JOIN NOW</a>
+                </div>
+            </div>
+                    <img src="images\livebg.png" alt="Slide 1" class="liveimg">
+            
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="contact-section">
+
+    <div class="form-container">
+
+        <!-- Prayer Request Form (default) -->
+        <form id="prayer-request-form" class="contact-form" action="" method="POST">
+            <h2 style="color: white; ">🙏 Submit a Prayer Request</h2>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea id= "message" name="prayer-request" placeholder="Your Prayer Request" rows="5" required></textarea>
+            <button type="submit" >Send Prayer Request</button>
+        </form>
+
+        <!-- Contact Us Form (hidden by default) -->
+        <form id="contact-us-form" class="contact-form hidden" action="" method="POST">
+            <h2 style="color: white;">📩 Contact Us</h2>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea id= "message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" >Send Message</button>
+        </form>
+<br><br>
+        <!-- Toggle Button -->
+        <button id="toggle-form-btn" >Contact Us</button>
+
+    </div>
+    
+</section>
+<footer id="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <img src="images\foldimg.png" alt="Slide 1" id="footerimg">
+            <!-- <h3>The Fold</h3> -->
+            <p>A community of Christian teens praying, growing, and vibing together.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Sessions & Events</a></li>
+                <li><a href="#">Community & Resources</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Get In Touch</h3>
+            <p>Email: thefive13studio@gmail.com</p>
+            <!-- <p>Follow Us:</p> -->
+            <div class="social-links">
+                <!-- <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/telegram.png" alt="Telegram"></a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 The Fold. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  
+    <!-- partial -->
+    
+</body>
+</html>
